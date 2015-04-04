@@ -29,6 +29,41 @@ Or install it yourself as:
 
     $ gem install fog-dropbox
 
+## Usage
+
+```ruby
+fog_client = Fog::Storage::Dropbox.new(:dropbox_oauth2_access_token => ENV['DROPBOX_OAUTH2_ACCESS_TOKEN'])
+
+# Read directory
+folder = "/folder"
+filename = "file"
+key = [folder, filename].join('/')
+directory = fog_client.directories.get(folder)
+puts directory.inspect
+
+# Read file
+file = directory.files.get(key)
+puts file.inspect
+puts file.body
+
+# Get file share link
+puts file.url()
+
+# Write string
+file.body = "New Content"
+file.save()
+
+# Write large file
+large_file = Tempfile.new("fog-dropbox-multipart")
+6.times { large_file.write("x" * (1024**2)) } # 6 MB file
+large_file.rewind
+file.body = large_file
+file.save()
+
+# Delete
+file.destroy()
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/zshannon/fog-dropbox/fork )
