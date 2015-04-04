@@ -10,7 +10,7 @@ describe "Fog::Storage::Dropbox::File" do
   describe "#body" do
 
     it "should read file" do
-      VCR.use_cassette("fog/storage/dropbox/directory/file/string") do
+      VCR.use_cassette("fog/storage/dropbox/file/string") do
         folder = "/FileTests"
         file = "Testfile"
         key = [folder, file].join('/')
@@ -23,7 +23,7 @@ describe "Fog::Storage::Dropbox::File" do
     end
 
     it "should write file" do
-      VCR.use_cassette("fog/storage/dropbox/directory/file/small_file") do
+      VCR.use_cassette("fog/storage/dropbox/file/small_file") do
         folder = "/FileTests"
         file = "Testfile"
         key = [folder, file].join('/')
@@ -38,7 +38,7 @@ describe "Fog::Storage::Dropbox::File" do
     end
 
     it "should write large file" do
-      VCR.use_cassette("fog/storage/dropbox/directory/file/large_file") do
+      VCR.use_cassette("fog/storage/dropbox/file/large_file") do
         folder = "/FileTests"
         file = "Testfile"
         key = [folder, file].join('/')
@@ -67,7 +67,7 @@ describe "Fog::Storage::Dropbox::File" do
   describe "#url" do
 
     it "should get a valid share url" do
-      VCR.use_cassette("fog/storage/dropbox/directory/file/string") do
+      VCR.use_cassette("fog/storage/dropbox/file/string") do
         folder = "/FileTests"
         file = "Testfile"
         key = [folder, file].join('/')
@@ -87,7 +87,7 @@ describe "Fog::Storage::Dropbox::File" do
   describe "#destroy" do
 
     it "should delete file" do
-      VCR.use_cassette("fog/storage/dropbox/directory/file/destroy") do
+      VCR.use_cassette("fog/storage/dropbox/file/destroy") do
         folder = "/FileTests"
         file = "Testfile"
         key = [folder, file].join('/')
