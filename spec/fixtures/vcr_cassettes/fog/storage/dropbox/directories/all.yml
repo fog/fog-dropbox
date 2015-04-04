@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:57 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjE1OTk4ODUwNTU3NDk0MDIwMDIzODI3Mzc3NjIxMzYwODQ3ODgz; expires=Wed, 01
+        Apr 2020 22:31:57 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '68'
+      X-Dropbox-Request-Id:
+      - 0d7ae8e5b97c2a6ae35812f859b2087b
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"hash": "a1d6daac35cad71d033f9dd0f38dcbb3", "thumb_exists": false,
+        "bytes": 0, "path": "/", "is_dir": true, "icon": "folder", "root": "app_folder",
+        "contents": [{"bytes": 0, "rev": "1e341cc98e", "revision": 30, "icon": "folder",
+        "path": "/Mastermind", "is_dir": true, "thumb_exists": false, "root": "app_folder",
+        "modified": "Fri, 03 Apr 2015 22:11:29 +0000", "size": "0 bytes"}], "size":
+        "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:57 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:12:42 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTA4NTk4MDI3MDU3NTE3MTYzNTQ2OTQ3ODQwNDU1MTgyOTQ5NDU3; expires=Wed, 01
+        Apr 2020 23:12:42 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '65'
+      X-Dropbox-Request-Id:
+      - 9c0c7d270b29c8b341cbe01b04eeed36
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 78, "bytes": 0, "thumb_exists": false,
+        "rev": "4e341cc98e", "modified": "Fri, 03 Apr 2015 23:06:08 +0000", "path":
+        "/Mastermind", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "hash": "6f116d2035e776f0df02feb3462af618", "contents": [], "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:12:42 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:12:42 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjcxNDc4MjE0NDExNjYyNTQ3ODQ4Njc0OTczMTQxMjQ5OTQ0MDQy; expires=Wed, 01
+        Apr 2020 23:12:42 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '85'
+      X-Dropbox-Request-Id:
+      - c20fd54324c0c10bdb72b1385b4bb04b
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 78, "bytes": 0, "thumb_exists": false,
+        "rev": "4e341cc98e", "modified": "Fri, 03 Apr 2015 23:06:08 +0000", "path":
+        "/Mastermind", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "hash": "6f116d2035e776f0df02feb3462af618", "contents": [], "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:12:42 GMT
+recorded_with: VCR 2.9.3

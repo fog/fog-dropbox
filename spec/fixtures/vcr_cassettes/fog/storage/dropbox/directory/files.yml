@@ -1,0 +1,262 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/The-Light-of-Nowheretown?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/The-Light-of-Nowheretown'' not found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:59 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/The-Devil-Is-a-Lie?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:46 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '356'
+      X-Dropbox-Request-Id:
+      - a405e2ba321d2aec88af356bd0527ede
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 29, "bytes": 13, "thumb_exists": false, "rev": "1d341cc98e",
+        "modified": "Fri, 03 Apr 2015 22:11:29 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/The-Devil-Is-a-Lie", "is_dir": false, "size": "13 bytes",
+        "root": "app_folder", "client_mtime": "Fri, 03 Apr 2015 22:11:29 +0000", "icon":
+        "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:46 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/War-Ready?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:47 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '705'
+      X-Dropbox-Request-Id:
+      - a7bf9adfb030d72806e2c0cb20b9df0c
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 31, "bytes": 13, "thumb_exists": false, "rev": "1f341cc98e",
+        "modified": "Fri, 03 Apr 2015 22:11:30 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/War-Ready", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Fri, 03 Apr 2015 22:11:30 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:47 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/Thug-Cry?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:48 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '403'
+      X-Dropbox-Request-Id:
+      - f15ffd3ee5ff0ca0b8af2b2e89726765
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 32, "bytes": 13, "thumb_exists": false, "rev": "20341cc98e",
+        "modified": "Fri, 03 Apr 2015 22:11:31 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/Thug-Cry", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Fri, 03 Apr 2015 22:11:31 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:48 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:48 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjM2NTIzODkxMTg0MTQyMzg1MDAwNTU3MDM0MzkyNDY4NjM2OTU4; expires=Wed, 01
+        Apr 2020 22:32:48 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '55'
+      X-Dropbox-Request-Id:
+      - 22324163fe3790cda4900cd9b3552fa1
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "hash": "31b7322142134f77c1e839a14b3f5344", "rev":
+        "1e341cc98e", "thumb_exists": false, "bytes": 0, "modified": "Fri, 03 Apr
+        2015 22:11:29 +0000", "path": "/Mastermind", "is_dir": true, "icon": "folder",
+        "root": "app_folder", "contents": [{"rev": "1d341cc98e", "thumb_exists": false,
+        "path": "/Mastermind/The-Devil-Is-a-Lie", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 22:11:29 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 22:11:29 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 29}, {"rev": "20341cc98e",
+        "thumb_exists": false, "path": "/Mastermind/Thug-Cry", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 22:11:31 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 22:11:31 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 32}, {"rev": "1f341cc98e",
+        "thumb_exists": false, "path": "/Mastermind/War-Ready", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 22:11:30 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 22:11:30 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 31}], "revision": 30}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:48 GMT
+recorded_with: VCR 2.9.3

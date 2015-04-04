@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/create_folder
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FJust-to-Delete
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:04 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjQwNjM2MzQwODczMjYxNjE3MTQ1NTg4MDk3NTQzMjgwMzMxMjQ3; expires=Wed, 01
+        Apr 2020 22:32:04 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '229'
+      X-Dropbox-Request-Id:
+      - 004464409fc4eb6772a6d8e52a35f48c
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "rev": "31341cc98e", "thumb_exists": false, "bytes":
+        0, "modified": "Fri, 03 Apr 2015 22:32:03 +0000", "path": "/Just-to-Delete",
+        "is_dir": true, "icon": "folder", "root": "app_folder", "revision": 49}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:04 GMT
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/delete
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FJust-to-Delete
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:04 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTIyNjAxOTI2NzkzNjcyMjkwNzE0NTM5NDEzMTk5MzA2MTM1OTA3; expires=Wed, 01
+        Apr 2020 22:32:04 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '248'
+      X-Dropbox-Request-Id:
+      - 3ef4d30784f98d37bd046e85d136b795
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 50, "bytes": 0, "thumb_exists": false,
+        "rev": "32341cc98e", "modified": "Fri, 03 Apr 2015 22:32:04 +0000", "path":
+        "/Just-to-Delete", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:04 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Just-to-Delete?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:32:04 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTUyMDc5OTkzMjg1NTcxNDc3NzkzMzgxNTI3NzgxODkzNTkxNDky; expires=Wed, 01
+        Apr 2020 22:32:04 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '63'
+      X-Dropbox-Request-Id:
+      - 97401f3091dca041dba7e289726a200d
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 50, "bytes": 0, "thumb_exists": false,
+        "rev": "32341cc98e", "modified": "Fri, 03 Apr 2015 22:32:04 +0000", "path":
+        "/Just-to-Delete", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "hash": "7c51b2f06348118ebd59ecb154dd10b0", "contents": [], "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:32:04 GMT
+recorded_with: VCR 2.9.3

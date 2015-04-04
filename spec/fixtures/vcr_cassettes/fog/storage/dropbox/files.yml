@@ -1,0 +1,554 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/The-Devil-Is-a-Lie?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:19:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/The-Devil-Is-a-Lie'' not found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:19:18 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/d5a390943e76f38222c67db514490720?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:21:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/Mastermind/d5a390943e76f38222c67db514490720'' not
+        found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:21:30 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/b60a1c19083eb3cc393bb2814e82c0ca?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:22:27 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/Mastermind/b60a1c19083eb3cc393bb2814e82c0ca'' not
+        found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:22:27 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/5dd81d3a832f8f69243b38d50d7d6199?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:23:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/Mastermind/5dd81d3a832f8f69243b38d50d7d6199'' not
+        found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:23:07 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/d49c79b06f48a576d16a32950b7a3ae5?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:23:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/Mastermind/d49c79b06f48a576d16a32950b7a3ae5'' not
+        found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:23:08 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/The-Devil-Is-a-Lie?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:26 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '587'
+      X-Dropbox-Request-Id:
+      - a08f57b5b87046f8c915800c8b66d430
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 151, "bytes": 13, "thumb_exists": false, "rev": "97341cc98e",
+        "modified": "Fri, 03 Apr 2015 23:24:25 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/The-Devil-Is-a-Lie", "is_dir": false, "size": "13 bytes",
+        "root": "app_folder", "client_mtime": "Fri, 03 Apr 2015 23:24:25 +0000", "icon":
+        "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:26 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/War-Ready?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:27 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '561'
+      X-Dropbox-Request-Id:
+      - dec955de79b268590508d64f922e7b92
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 153, "bytes": 13, "thumb_exists": false, "rev": "99341cc98e",
+        "modified": "Fri, 03 Apr 2015 23:24:26 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/War-Ready", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Fri, 03 Apr 2015 23:24:26 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:27 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/Mastermind/Thug-Cry?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:27 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '483'
+      X-Dropbox-Request-Id:
+      - 0298b84af969a246e53586ae052aa44b
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 154, "bytes": 13, "thumb_exists": false, "rev": "9a341cc98e",
+        "modified": "Fri, 03 Apr 2015 23:24:27 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/Thug-Cry", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Fri, 03 Apr 2015 23:24:27 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:27 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/The-Devil-Is-a-Lie?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:28 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjIwOTQ4ODUzMDAxMTY5NDY4MjM1Mzk5MTQ0MDk5NzA0OTI1MTk3; expires=Wed, 01
+        Apr 2020 23:24:28 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '48'
+      X-Dropbox-Request-Id:
+      - bee993071756505fdbb820483930dd46
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"revision": 151, "bytes": 13, "thumb_exists": false, "rev": "97341cc98e",
+        "modified": "Fri, 03 Apr 2015 23:24:25 +0000", "mime_type": "application/octet-stream",
+        "path": "/Mastermind/The-Devil-Is-a-Lie", "is_dir": false, "size": "13 bytes",
+        "root": "app_folder", "client_mtime": "Fri, 03 Apr 2015 23:24:25 +0000", "icon":
+        "page_white"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:28 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:28 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjQ3NjM0NTc1MDUzODQ5MDEyODYyMTc4NDY4Nzc5MDg3MDUwMTgz; expires=Wed, 01
+        Apr 2020 23:24:28 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '58'
+      X-Dropbox-Request-Id:
+      - ab0af062f78f2bdbfddd83c4cb096e2e
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "hash": "b6ba59dfcc88a1146e3112573c4bd6b8", "rev":
+        "98341cc98e", "thumb_exists": false, "bytes": 0, "modified": "Fri, 03 Apr
+        2015 23:24:25 +0000", "path": "/Mastermind", "is_dir": true, "icon": "folder",
+        "root": "app_folder", "contents": [{"rev": "97341cc98e", "thumb_exists": false,
+        "path": "/Mastermind/The-Devil-Is-a-Lie", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 23:24:25 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 23:24:25 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 151}, {"rev": "9a341cc98e",
+        "thumb_exists": false, "path": "/Mastermind/Thug-Cry", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 23:24:27 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 23:24:27 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 154}, {"rev": "99341cc98e",
+        "thumb_exists": false, "path": "/Mastermind/War-Ready", "is_dir": false, "client_mtime":
+        "Fri, 03 Apr 2015 23:24:26 +0000", "icon": "page_white", "bytes": 13, "modified":
+        "Fri, 03 Apr 2015 23:24:26 +0000", "size": "13 bytes", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 153}], "revision": 152}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:28 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Mastermind/not-a-rick-ross-single?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/Mastermind/not-a-rick-ross-single'' not found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:29 GMT
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/delete
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FMastermind
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 23:24:29 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjcyNzE0NjU3Mzg4NDMxNDIyNTc3MDE2MTg2NTMzNjgyMDYyNDM5; expires=Wed, 01
+        Apr 2020 23:24:29 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '311'
+      X-Dropbox-Request-Id:
+      - 5da8595b5ac1e2b31562515a8322066a
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 158, "bytes": 0, "thumb_exists": false,
+        "rev": "9e341cc98e", "modified": "Fri, 03 Apr 2015 23:24:29 +0000", "path":
+        "/Mastermind", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 23:24:29 GMT
+recorded_with: VCR 2.9.3

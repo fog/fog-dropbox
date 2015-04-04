@@ -1,0 +1,519 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/FileTests/Testfile?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:41 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=NDIyNDc1MTgwNTQwMjk2OTU4MDM3MzAxNTEyNTA5MjEzODQ1NTg%3D; expires=Thu, 02
+        Apr 2020 01:04:41 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '71'
+      X-Dropbox-Request-Id:
+      - 247ee94d27cbe75cc6516eb997cfa350
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"revision": 221, "bytes": 13, "thumb_exists": false, "rev": "dd341cc98e",
+        "modified": "Sat, 04 Apr 2015 01:04:40 +0000", "mime_type": "application/octet-stream",
+        "path": "/FileTests/Testfile", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Sat, 04 Apr 2015 01:04:40 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:41 GMT
+- request:
+    method: get
+    uri: https://api-content.dropbox.com/1/files/auto/FileTests/Testfile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:41 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - sandbox allow-scripts allow-forms allow-popups allow-top-navigation; referrer
+        no-referrer;
+      Accept-Ranges:
+      - bytes
+      X-Dropbox-Metadata:
+      - '{"rev": "dd341cc98e", "thumb_exists": false, "path": "/FileTests/Testfile",
+        "is_dir": false, "client_mtime": "Sat, 04 Apr 2015 01:04:40 +0000", "icon":
+        "page_white", "bytes": 13, "modified": "Sat, 04 Apr 2015 01:04:40 +0000",
+        "size": "13 bytes", "root": "app_folder", "mime_type": "application/octet-stream",
+        "revision": 221}'
+      X-Server-Response-Time:
+      - '185'
+      Content-Security-Policy-Report-Only:
+      - default-src *; script-src 'none'; report-uri https://www.dropbox.com/csp_log
+      Etag:
+      - 221n
+      X-Dropbox-Request-Id:
+      - 8df8b50df13c1057c148e4e4a17fad7f
+      Pragma:
+      - public
+      Cache-Control:
+      - max-age=0
+      X-Content-Security-Policy:
+      - sandbox allow-scripts allow-forms allow-popups allow-top-navigation; referrer
+        no-referrer;
+      X-Webkit-Csp:
+      - sandbox allow-scripts allow-forms allow-popups allow-top-navigation; referrer
+        no-referrer;
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:41 GMT
+- request:
+    method: put
+    uri: https://api-content.dropbox.com/1/files_put/auto/FileTests/Testfile?overwrite=true
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    headers:
+      Content-Type:
+      - application/octet-stream
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Length:
+      - 13
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:52 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Server-Response-Time:
+      - '519'
+      X-Dropbox-Request-Id:
+      - 8c835bd1defdde66c0fd5023444c0351
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+    body:
+      encoding: UTF-8
+      string: '{"revision": 223, "bytes": 13, "thumb_exists": false, "rev": "df341cc98e",
+        "modified": "Sat, 04 Apr 2015 01:04:52 +0000", "mime_type": "application/octet-stream",
+        "path": "/FileTests/Testfile", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Sat, 04 Apr 2015 01:04:52 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:52 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/FileTests?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:52 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=NDUyNjk5OTEzNjk4OTIzODQyMDAxNTMwOTc1ODI5NjQ0NjU4Mjg%3D; expires=Thu, 02
+        Apr 2020 01:04:52 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '62'
+      X-Dropbox-Request-Id:
+      - eb2d175589443fcd999539bc4678fe87
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "hash": "b76e1831c0d164d280f7ffb2af5499de", "rev":
+        "a0341cc98e", "thumb_exists": false, "bytes": 0, "modified": "Fri, 03 Apr
+        2015 23:53:14 +0000", "path": "/FileTests", "is_dir": true, "icon": "folder",
+        "root": "app_folder", "contents": [{"rev": "df341cc98e", "thumb_exists": false,
+        "path": "/FileTests/Testfile", "is_dir": false, "client_mtime": "Sat, 04 Apr
+        2015 01:04:52 +0000", "icon": "page_white", "bytes": 13, "modified": "Sat,
+        04 Apr 2015 01:04:52 +0000", "size": "13 bytes", "root": "app_folder", "mime_type":
+        "application/octet-stream", "revision": 223}, {"rev": "a3341cc98e", "thumb_exists":
+        false, "path": "/FileTests/Testfile (1)", "is_dir": false, "client_mtime":
+        "Sat, 04 Apr 2015 00:21:12 +0000", "icon": "page_white", "bytes": 6291456,
+        "modified": "Sat, 04 Apr 2015 00:21:12 +0000", "size": "6 MB", "root": "app_folder",
+        "mime_type": "application/octet-stream", "revision": 163}], "revision": 160}'
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:52 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/FileTests/Testfile?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:52 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTc4NjgxNjUxMzc2MDU5MzMxMjMzODAyODQ3MDg1NjMzNjI2NjQx; expires=Thu, 02
+        Apr 2020 01:04:52 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '53'
+      X-Dropbox-Request-Id:
+      - e5836f0c7e916b7e46d523360f49c2e3
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"revision": 223, "bytes": 13, "thumb_exists": false, "rev": "df341cc98e",
+        "modified": "Sat, 04 Apr 2015 01:04:52 +0000", "mime_type": "application/octet-stream",
+        "path": "/FileTests/Testfile", "is_dir": false, "size": "13 bytes", "root":
+        "app_folder", "client_mtime": "Sat, 04 Apr 2015 01:04:52 +0000", "icon": "page_white"}'
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:52 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/shares/auto/FileTests/Testfile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:52 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTQ0OTkxODUzMjE1MzQ1NTI3NDYwMzIwMTEyMTY5NzI4MDEzOTc0; expires=Thu, 02
+        Apr 2020 01:04:52 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '134'
+      X-Dropbox-Request-Id:
+      - 6656a4bc741344e5c09f98781ccd8563
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"url": "https://db.tt/dBQN0I0l", "expires": "Tue, 01 Jan 2030 00:00:00
+        +0000", "visibility": "PUBLIC"}'
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:52 GMT
+- request:
+    method: get
+    uri: https://db.tt/dBQN0I0l
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: FOUND
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:52 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Location:
+      - https://www.dropbox.com/s/o5xfb8ugn14436e/Testfile?dl=0
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n  <head><title>Found</title></head>\r\n  <body>\r\n    <h1>Found</h1>\r\n
+        \   <p>The resource was found at <a href=\"https://www.dropbox.com/s/o5xfb8ugn14436e/Testfile?dl=0\">https://www.dropbox.com/s/o5xfb8ugn14436e/Testfile?dl=0</a>;\r\nyou
+        should be redirected automatically.\r\n\r\n<!--  --></p>\r\n    <hr noshade>\r\n
+        \   <div align=\"right\">WSGI Server</div>\r\n  </body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:52 GMT
+- request:
+    method: get
+    uri: https://www.dropbox.com/s/o5xfb8ugn14436e/Testfile?dl=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: FOUND
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 04 Apr 2015 01:04:53 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Robots-Tag:
+      - noindex, nofollow, noimageindex
+      Content-Security-Policy:
+      - 'img-src https://* data: ; connect-src https://* ws://127.0.0.1:*/ws ; media-src
+        https://* ; object-src https://cf.dropboxstatic.com/static/ https://www.dropboxstatic.com
+        ''self'' https://flash.dropboxstatic.com https://swf.dropboxstatic.com https://dbxlocal.dropboxstatic.com
+        https://dl-doc.dropboxusercontent.com https://dl-web.dropbox.com https://dl.dropboxusercontent.com
+        ; default-src ''none'' ; font-src https://* data: ; frame-src https://* carousel://*
+        dbapi-6://* itms-apps://* itms-appss://* ; style-src https://* ''unsafe-inline''
+        ''unsafe-eval'' ; report-uri https://www.dropbox.com/csp_log ; script-src
+        https://ajax.googleapis.com/ajax/libs/jquery/ ''unsafe-inline'' ''unsafe-eval''
+        ''self'' https://cf.dropboxstatic.com/static/javascript/ https://cf.dropboxstatic.com/static/coffee/compiled/
+        https://www.dropboxstatic.com/static/javascript/ https://www.dropboxstatic.com/static/coffee/
+        https://www.google.com/recaptcha/api/ ''nonce-5794271927989435869'' ;'
+      Set-Cookie:
+      - gvc=MTk0ODg4Mzg0NDU5MDY5MjY2MDA5ODQwOTkzODU2ODg4MDAwNjQx; expires=Thu, 02
+        Apr 2020 01:04:53 GMT; httponly; Path=/; secure
+      - js_csrf=aCOBoRUfBjkB1UDp0DwKkyDM; Domain=www.dropbox.com; expires=Mon, 04
+        May 2015 01:04:53 GMT; Path=/; secure
+      - locale=en; Domain=dropbox.com; expires=Thu, 02 Apr 2020 01:04:53 GMT; Path=/;
+        secure
+      - t=aCOBoRUfBjkB1UDp0DwKkyDM; Domain=dropbox.com; expires=Mon, 04 May 2015 01:04:53
+        GMT; httponly; Path=/; secure
+      X-Dropbox-Request-Id:
+      - e8cb483c9cfab8debb310bc7206afd23
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Location:
+      - https://dl.dropboxusercontent.com/content_link/TKuSKv898ZiYMbAlxewmgyeaql4hJO87gdnKatThx6mjAm8slIT0aDE18N1XoNWE?dl=1
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n  <head><title>Found</title></head>\r\n  <body>\r\n    <h1>Found</h1>\r\n
+        \   <p>The resource was found at <a href=\"https://dl.dropboxusercontent.com/content_link/TKuSKv898ZiYMbAlxewmgyeaql4hJO87gdnKatThx6mjAm8slIT0aDE18N1XoNWE?dl=1\">https://dl.dropboxusercontent.com/content_link/TKuSKv898ZiYMbAlxewmgyeaql4hJO87gdnKatThx6mjAm8slIT0aDE18N1XoNWE?dl=1</a>;\r\nyou
+        should be redirected automatically.\r\n\r\n<!--  --></p>\r\n    <hr noshade>\r\n
+        \   <div align=\"right\">WSGI Server</div>\r\n  </body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:53 GMT
+- request:
+    method: get
+    uri: https://dl.dropboxusercontent.com/content_link/TKuSKv898ZiYMbAlxewmgyeaql4hJO87gdnKatThx6mjAm8slIT0aDE18N1XoNWE?dl=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - none
+      Cache-Control:
+      - max-age=0
+      Content-Disposition:
+      - attachment; filename="Testfile"; filename*=UTF-8''Testfile
+      Content-Type:
+      - text/plain; charset=utf-8
+      Date:
+      - Sat, 04 Apr 2015 01:04:53 GMT
+      Etag:
+      - 223d
+      Pragma:
+      - public
+      Server:
+      - nginx
+      Set-Cookie:
+      - uc_session=pzN5RmWDjFKZiFtw6SQC9aV8BZfk8MPW6QpVr4tgQylDmbRElASO5ub8GkM4Nsk1;
+        Domain=dropboxusercontent.com; httponly; Path=/; secure
+      X-Dropbox-Request-Id:
+      - b69b96aa4bf7413dd363d79a7ee6b689
+      X-Robots-Tag:
+      - noindex, nofollow
+      - noindex, nofollow, noimageindex
+      X-Server-Response-Time:
+      - '183'
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: Bellaire Rose
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 01:04:53 GMT
+recorded_with: VCR 2.9.3

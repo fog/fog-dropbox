@@ -1,0 +1,208 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/delete
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FSave-then-Delete
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error": "Path ''/save-then-delete'' not found"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:58 GMT
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/create_folder
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FSave-then-Delete
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:59 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MTM4NDkxMTQ3NDE0OTI0Mzk3NTI0NjIwNzk5NzY3ODg0NzMzODk4; expires=Wed, 01
+        Apr 2020 22:31:59 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '234'
+      X-Dropbox-Request-Id:
+      - b7d43f2dc25577f32043154b9bed0f36
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "rev": "2f341cc98e", "thumb_exists": false, "bytes":
+        0, "modified": "Fri, 03 Apr 2015 22:31:58 +0000", "path": "/Save-then-Delete",
+        "is_dir": true, "icon": "folder", "root": "app_folder", "revision": 47}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:59 GMT
+- request:
+    method: get
+    uri: https://api.dropbox.com/1/metadata/auto/Save-then-Delete?file_limit=25000&include_deleted=false&list=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:59 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=Mjk4MTk4Mjc1MDQ2MjQ5Mjg3NjA0NzQxODI3NjYwNzE4NTc2MjQz; expires=Wed, 01
+        Apr 2020 22:31:59 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '73'
+      X-Dropbox-Request-Id:
+      - 6436efb0fea16a8a1294fd5e964d7c03
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"size": "0 bytes", "hash": "d38f2e1bcb53940850b040de0c0d197b", "rev":
+        "2f341cc98e", "thumb_exists": false, "bytes": 0, "modified": "Fri, 03 Apr
+        2015 22:31:58 +0000", "path": "/Save-then-Delete", "is_dir": true, "icon":
+        "folder", "root": "app_folder", "contents": [], "revision": 47}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:59 GMT
+- request:
+    method: post
+    uri: https://api.dropbox.com/1/fileops/delete
+    body:
+      encoding: US-ASCII
+      string: root=auto&path=%2FSave-then-Delete
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OfficialDropboxRubySDK/1.6.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Authorization:
+      - Bearer <DROPBOX_OAUTH2_ACCESS_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Apr 2015 22:31:59 GMT
+      Content-Type:
+      - text/javascript
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - gvc=MjUwODI1ODE3MzEyMzg5OTMxNTc1NTk0MDAwMDQ5ODc1MjQwNTMx; expires=Wed, 01
+        Apr 2020 22:31:59 GMT; httponly; Path=/; secure
+      X-Server-Response-Time:
+      - '274'
+      X-Dropbox-Request-Id:
+      - 3e1b3ff8fbac280bfbabac6f4751bb01
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Dropbox-Http-Protocol:
+      - None
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"is_deleted": true, "revision": 48, "bytes": 0, "thumb_exists": false,
+        "rev": "30341cc98e", "modified": "Fri, 03 Apr 2015 22:31:59 +0000", "path":
+        "/Save-then-Delete", "is_dir": true, "icon": "folder_gray", "root": "app_folder",
+        "size": "0 bytes"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2015 22:31:59 GMT
+recorded_with: VCR 2.9.3
