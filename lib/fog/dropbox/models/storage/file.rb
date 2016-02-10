@@ -61,9 +61,9 @@ module Fog
           end
         end
 	
-		def public_url
-		  self.url
-		end
+        def public_url
+          self.url
+        end
 
         def url()
           requires :key
@@ -73,7 +73,7 @@ module Fog
           if r.code == "302"
             url = r.header['location']
           end
-		  CGI.unescape url.gsub("dl=0", "dl=1")
+          CGI.unescape url.gsub("dl=0", "dl=1")
         end
 
       end
