@@ -32,7 +32,7 @@ module Fog
 
         def new(attributes = {})
           requires :directory
-					attributes['path'] ||= attributes[:key]
+		  attributes['path'] ||= attributes[:key]
           attributes[:name] = attributes['path'].split('/').last
           super({ :directory => directory }.merge(attributes))
         end
