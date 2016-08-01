@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Module for the 'fog' gem to support Dropbox.}
   spec.description   = %q{This library can be used as a module for `fog` or as standalone provider
                         to use Dropbox in applications.}
-  spec.homepage      = "https://github.com/zshannon/fog-dropbox"
+  spec.homepage      = "https://github.com/fog/fog-dropbox"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
